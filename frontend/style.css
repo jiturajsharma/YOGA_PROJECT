@@ -1,0 +1,96 @@
+
+body {
+    background-color: #d4f2e7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Abhaya Libre', serif;
+
+  }
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .header img {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header ul li {
+    margin: 0 10px;
+  }
+
+  .header ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+.content{
+  display: flex;
+}
+
+.summry{
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+  .content h1{
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .content span {
+    color: #0CFF15;
+  }
+
+  .content p {
+font-family: "Plus Jakarta Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .content img {
+    width: 700;
+  height: 700px;
+  flex-shrink: 0;
+  }
+
+#people{
+    height: 44px;
+    width: 222px;
+    margin: 50px 70px;
+}
+
+#registerBtn{
+  cursor: pointer;
+  margin-top: 55px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  width: 378px;
+  height: 68px;
+  border-radius: 34px;
+  background: #0CFF15;
+  border: none;
+}
+
+  
