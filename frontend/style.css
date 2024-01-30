@@ -6,40 +6,70 @@ body {
     font-family: 'Abhaya Libre', serif;
 
   }
-
+.container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #42f548; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+}
 
 .header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 50%;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-  
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* New styles for the navbar links */
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.header ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    transition: color 0.3s ease; 
+}
+
+.header ul li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; 
+    transition: width 0.3s ease; 
+}
+
+.header ul li:hover a {
+    color: #ffffff; 
+    font-weight: 700;
+}
+
+.header ul li:hover::before {
+    width: 100%; 
+}
+
   .header img {
     width: 100px;
     height: 50px;
   }
-  
-  .header ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 50px;
-  }
-  
-  .header ul li {
-    margin: 0 10px;
-  }
-
-  .header ul li a {
-    text-decoration: none;
-    color: #000;
-  }
 
 .content{
+  margin-top: 5%;
   display: flex;
 }
 
@@ -90,14 +120,16 @@ line-height: normal;
   letter-spacing: 2px;
   width: 378px;
   height: 68px;
+  color: #000;
   border-radius: 34px;
   background: #0CFF15;
   border: none;
 }
 
+.registration button:hover {
+  background-color: #45a049;
+}
   
-
-
 .SecondContainer {
   margin: 0 auto;
   padding: 20px;
@@ -106,7 +138,6 @@ line-height: normal;
 /* Define the style for each section */
 .SecondSection {
   gap: 20%;
-  /* gap: 12rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,4 +155,108 @@ line-height: normal;
   font-size: 17px;
   color: #353535;
   line-height: 1.5;
+}
+
+
+
+.registration {
+  max-width: 400px;
+  max-height: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.pricing-plan {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.pricing-plan:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-plan h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #1fff3d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
