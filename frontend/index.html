@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>YogaSanskriti.com</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+  </head>
+  <body>
+    
     <div class="container">
-        <div class="header">
-            <img src="./assest/logo.png" alt="Yoga logo">
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Event</a></li>
-            <li><a href="#" onclick="scrollToPricing()">Price</a></li>
-            <li><a href="#">About</a></li>
-            </ul>
-        </div>
+      <div class="header">
+        <img src="./assest/logo.png" alt="Yoga logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#" onclick="scrollToPricing()">Price</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
       </div>
-
-        <div class="content">     
-          <div class =" summry">
-            <h1 id="originalHeading">Empower  <span>Your Journey </span>  <br>
-              to Well-Being.
-              <div id="dynamicHeading"></div>
-            </h1>
-              <p>"Embark on a journey of self-discovery at YogaSanskriti.com,   <br>
-                Immerse yourself in the serenity of mindful practices, guided by  <br>
-                expert instructors. Elevate your well-being, one breath at a time."</p>
-                <!-- Update your button in HTML -->
-<button id="registerBtn" onclick="scrollToRegistration()">Register Today</button>
-
-                <img id="people" src="./assest/people.png" alt="review">
-              </div>
-                <img src="./assest/YOGA MODEL.png" alt="Yoga pose">
-
-              </div>
-
-
+    </div>
+    
+    <div class="content">     
+      <div class =" summry">
+        <h1 id="originalHeading">Empower  <span>Your Journey </span>  <br>
+          to Well-Being.
+          <div id="dynamicHeading"></div>
+        </h1>
+        <p>"Embark on a journey of self-discovery at YogaSanskriti.com,   <br>
+          Immerse yourself in the serenity of mindful practices, guided by  <br>
+          expert instructors. Elevate your well-being, one breath at a time."</p>
+          <!-- Update your button in HTML -->
+          <button id="registerBtn" onclick="scrollToRegistration()">Register Today</button>
+          
+          <img id="people" src="./assest/people.png" alt="review">
+        </div>
+        <img src="./assest/YOGA MODEL.png" alt="Yoga pose">
+        
+      </div>
+      
 
               <div class="SecondContainer">
                 <!-- Create the first section -->
@@ -147,6 +146,25 @@
                 </form>
             </div>
 
+
+            <button id="help-button" onclick="togglePopup()">Need Help?</button>
+
+            <!-- The popup help section -->
+            <div id="help-popup" class="popup">
+                <div class="popup-content">
+                    <button id="close-button" onclick="togglePopup()">&times;</button>
+                    <h3>Contact Us</h3>
+                    <p>If you want to connect immediately, fill out the form.</p>
+                    <label for="fullName">Full Name:</label>
+                    <br><input type="text" id="fullName" name="fullName" required> <br>
+                    <label for="email">Email:</label>
+                    <br><input type="email" id="email" name="email" required> <br>
+                    <label for="number">Number:</label>
+                    <br><input type="number" id="number" name="number" required> <br>
+                    <button id="submit" onclick="submitForm()">Submit</button>
+                </div>
+            </div>
+            
 
 
 

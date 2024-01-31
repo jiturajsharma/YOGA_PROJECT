@@ -81,3 +81,22 @@ function animateHeading() {
 
 // Call the function when the page loads
 document.addEventListener("DOMContentLoaded", animateHeading);
+
+
+
+
+var popupVisible = false;
+
+function togglePopup() {
+    var popup = document.getElementById('help-popup');
+    popup.style.display = popupVisible ? 'none' : 'block';
+    popupVisible = !popupVisible;
+}
+
+function submitForm() {
+    var fullName = document.getElementById('fullName').value;
+    var email = document.getElementById('email').value;
+    var number = document.getElementById('number').value;
+
+    togglePopup();
+}
