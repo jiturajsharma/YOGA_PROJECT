@@ -335,3 +335,48 @@ button:hover {
         #submit:hover {
             background-color: #555;
         }
+
+
+
+
+
+        .event-section {
+          background-color: #f8f8f8;
+          padding: 50px 0;
+        }
+        .event-container {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .event-item {
+          flex: 1;
+          margin: 20px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          text-align: center;
+          transition: transform 0.3s ease;
+        }
+        .event-item:hover {
+          transform: scale(1.05);
+        }
+
+
+    .about-section {
+      background-color: #f0f0f0;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .about-content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .about-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }

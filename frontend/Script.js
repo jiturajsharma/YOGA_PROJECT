@@ -100,3 +100,20 @@ function submitForm() {
 
     togglePopup();
 }
+
+
+document.getElementById('eventLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('.event-section').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+
+
+document.getElementById('aboutLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector('#about-section').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
